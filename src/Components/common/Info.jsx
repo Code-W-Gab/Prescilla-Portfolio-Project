@@ -1,20 +1,31 @@
 import { Dot } from 'lucide-react'
+import girl from '../../assets/cute-girl-employee.png';
+
 export default function Info() {
   return(
-    <div>
-      <div>
-        <Dot />
-        <span>Available for new projects</span>
+    <div className='flex items-center '>
+      <div className='w-150'>
+        <div className='inline-block'>
+          <div className='flex items-center justify-center pr-6 bg-[#c89757] rounded-4xl'>
+            <Dot className='text-[#9b4819] size-8' />
+            <span className='text-white text-xs VA'>Available for new projects</span>
+          </div>
+        </div>
+        <h1 className='Name text-6xl mt-3 mb-2 text-[#153828]'>Prescilla Samorin</h1>
+        <p className='VA text-[#314028] text-2xl mb-5'>Virtual Assistant</p>
+        <p className='VA text-md text-[#314028] w-80'>Helping entrepreneurs reclaim their time so they can focus on what truly matters.</p>
+        <div className='mt-10 flex gap-6'>
+          <button className='bg-[#c89757] text-white px-8 py-1 rounded-4xl text-md VA'>
+            View Services
+          </button>
+          <button className='text-[#c89757] border px-8 py-2 rounded-4xl text-md VA'>
+            Get in Touch
+          </button>
+        </div>
       </div>
-      <h1>Prescilla Samorin</h1>
-      <p>Helping entrepreneurs reclaim their time so they can focus on what truly matters.</p>
+
       <div>
-        <button>
-          View Services
-        </button>
-        <button>
-          Get in Touch
-        </button>
+        <img src={girl} alt="Logo" className="size-110" />
       </div>
     </div>
   )

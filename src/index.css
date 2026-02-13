@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --font-family-spartan: 'League Spartan', sans-serif;
+  --font-family-carlito: 'Carlito, sans-serif';
+}
+
+.Name {
+  font-family: var(--font-family-spartan);
+}
+
+.VA {
+  font-family: var(--font-family-carlito);
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(90deg, #fcf5e7, #d7f4ba);
+}
