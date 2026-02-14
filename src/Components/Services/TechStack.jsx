@@ -1,19 +1,25 @@
-import hiring from '../../assets/hiring.png'
-import notebook from '../../assets/notebook.png'
-import working from '../../assets/working.png'
+import gmail from '../../assets/gmail.png'
 import calendar from '../../assets/calendar.png'
-import document from '../../assets/documentation.png'
-import mail from '../../assets/email.png'
+import excel from '../../assets/excel.png'
+import management from '../../assets/management.png'
+import call from '../../assets/video-call.png'
+import conversation from '../../assets/conversation.png'
+import linkedin from '../../assets/business.png'
+import teamwork from '../../assets/teamwork.png'
+import ai from '../../assets/microchip.png'
+
 
 export default function TechStack() {
-  const Expertises = [
-    {title: "Gmail & Outlook", text: "Email management & automation", icon: },
-    {title: "Google & Outlook Calendar", text: "Calendar scheduling & coordination", icon: },
-    {title: "Excel & Google Sheets", text: "Data analysis & reporting", icon: },
-    {title: "Click Up & Asana", text: "Project management platforms", icon: },
-    {title: "Zoom & Google Meet", text: "Video conferencing solutions", icon: },
-    {title: "", text: "", icon: },
-
+  const TechStack = [
+    {title: "Gmail & Outlook", text: "Email management & automation", icon: gmail},
+    {title: "Google & Outlook Calendar", text: "Calendar scheduling & coordination", icon: calendar},
+    {title: "Excel & Google Sheets", text: "Data analysis & reporting", icon: excel},
+    {title: "Click Up & Asana", text: "Project management platforms", icon: management},
+    {title: "Zoom & Google Meet", text: "Video conferencing solutions", icon: call},
+    {title: "Teams & WhatsApp", text: "Communication platforms", icon: conversation},
+    {title: "LinkedIn", text: "Professional networking & outreach", icon: linkedin},
+    {title: "Apollo", text: "Lead research & outreach", icon: teamwork},
+    {title: "ChatGPT & Gemini", text: "AI writing & brainstorming", icon: ai}
   ]
   return(
     <div>
@@ -23,13 +29,13 @@ export default function TechStack() {
         <p className='sans text-center mt-2'>Proficient in industry-leading platforms to deliver exceptional results</p>
       </div>
       <div className='mt-15 grid grid-cols-3 gap-10'>
-        {Expertises.map((expertise) => {
-          const image = expertise.icon
+        {TechStack.map((stack) => {
+          const image = stack.icon
           return(
-            <div key={expertise.title} className='bg-[#d6b6a3] p-4 rounded-md flex flex-col items-center'>
-              <img src={image} alt={expertise.title} className="h-10 w-10" />
-              <h1 className='font-bold serif text-xl mt-2 mb-3 text-[#314028]'>{expertise.title}</h1>
-              <p className='text-sm text-center text-[#314028]'>{expertise.text}</p>
+            <div key={stack.title} className='bg-[#d6b6a3] p-4 rounded-md flex flex-col items-center'>
+              <img src={image} alt={stack.title} className="h-10 w-10" />
+              <h1 className='font-bold serif text-xl mt-2 mb-3 text-[#314028]'>{stack.title}</h1>
+              <p className='text-sm text-center text-[#314028]'>{stack.text}</p>
             </div>
           )
         })}
