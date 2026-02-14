@@ -1,6 +1,8 @@
 import AboutMe from "../Components/about/Aboutme";
+import Footer from "../Components/common/Footer";
 import Header from "../Components/common/Header";
 import Info from "../Components/common/Info";
+import Form from "../Components/Contact/Form";
 import Expertise from "../Components/Services/Expertise";
 import TechStack from "../Components/Services/TechStack";
 import Testimonials from "../Components/Services/Testimonials";
@@ -26,6 +28,12 @@ export default function HomePage() {
         <div className="py-6 px-60">
           <Testimonials/>
         </div>
+      </div>
+      <div className="bg-[#153828] pt-6 pb-20 px-110">
+        <Form/>
+      </div>
+      <div className="py-6 px-20 m">
+        <Footer/>
       </div>
     </div>
   )
