@@ -8,9 +8,9 @@ export default function Form() {
           <p className='sans mt-2 w-130'>Ready to Reclaim Your Time? Let's discuss how I can help streamline your workflow and boost your productivity.</p>
         </div>
         <div className="text-gray-300 w-full border-b-2 mt-10"></div>
-        <div className="mt-10">
+        <div className="mt-10 text-sm sans">
           <div className="flex flex-col gap-3">
-            <label>YOUR NAME:</label>
+            <label className="text-gray-600">YOUR NAME:</label>
             <input 
               type="text" 
               placeholder="Full Name"
@@ -19,7 +19,7 @@ export default function Form() {
           </div>
 
           <div className="flex flex-col gap-3 mt-7">
-            <label>EMAIL:</label>
+            <label className="text-gray-600">EMAIL:</label>
             <input 
               type="email" 
               placeholder="Example@gmail.com"
@@ -28,7 +28,7 @@ export default function Form() {
           </div>
 
           <div className="flex flex-col gap-3 mt-7">
-            <label>SERVICE INTERESTED IN:</label>
+            <label className="text-gray-600">SERVICE INTERESTED IN:</label>
             <select className="border py-2 px-2 rounded-sm">
               <option value="">Please Select</option>
               <option value="Admin & Operations">Admin & Operations</option>
@@ -39,10 +39,10 @@ export default function Form() {
           </div>
 
           <div className="flex flex-col gap-3 mt-7">
-            <label>TELL ME ABOUT YOUR PROJECT:</label>
+            <label className="text-gray-600">TELL ME ABOUT YOUR PROJECT:</label>
             <textarea
               placeholder="About your project"
-              className="border py-2 px-4 rounded-sm"
+              className="border py-2 px-4 rounded-sm h-30"
             />
           </div>
         </div>

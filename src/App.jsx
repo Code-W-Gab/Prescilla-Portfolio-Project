@@ -9,8 +9,7 @@ function App() {
     <main>
       <Routes>
         <Route>
-          <Route path="/" element={<Navigate to='/Home'/>}/>
-          <Route path="/Home" element={<HomePage/>}/>
+          <Route path="/" element={<HomePage/>}/>
           <Route path="/About" element={<AboutPage/>}/>
           <Route path="/Service" element={<ServicePage/>}/>
           <Route path="/Contact" element={<ContactPage/>}/>

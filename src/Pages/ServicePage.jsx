@@ -14,7 +14,7 @@ export default function ServicePage() {
           <TechStack/>
         </div>
       </div>
-      <div className="py-6 px-20 m">
+      <div className="py-6 px-20">
         <Footer/>
       </div>
     </div>
