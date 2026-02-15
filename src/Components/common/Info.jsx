@@ -1,5 +1,6 @@
 import { Dot } from 'lucide-react'
 import girl from '../../assets/cute-girl-employee.png';
+import { Link } from 'react-router-dom';
 
 export default function Info() {
   return(
@@ -14,13 +15,13 @@ export default function Info() {
         <h1 className='playfair font-bold text-6xl mt-3 mb-2 text-[#153828]'>Prescilla Samorin</h1>
         <p className='serif text-[#314028] text-2xl mb-5'>Virtual Assistant</p>
         <p className='serif text-md text-[#314028] w-80'>Helping entrepreneurs reclaim their time so they can focus on what truly matters.</p>
-        <div className='mt-10 flex gap-6'>
-          <button className='bg-[#c89757] text-white px-8 py-1 border rounded-4xl text-md serif hover:bg-[#314028]'>
+        <div className='mt-10 flex items-center gap-6'>
+          <Link to={"/Service"} className='bg-[#c89757] text-white px-8 py-2 border rounded-4xl text-md serif hover:bg-[#314028]'>
             View Services
-          </button>
-          <button className='text-[#c89757] cursor border px-8 py-2 rounded-4xl text-md serif hover:text-[#314028] '>
+          </Link>
+          <Link to={"/Contact"} className='text-[#c89757] cursor border px-8 py-2 rounded-4xl text-md serif hover:text-[#314028] '>
             Get in Touch
-          </button>
+          </Link>
         </div>
       </div>
 

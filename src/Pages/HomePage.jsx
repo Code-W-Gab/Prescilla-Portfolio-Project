@@ -5,7 +5,6 @@ import Info from "../Components/common/Info";
 import Form from "../Components/Contact/Form";
 import Expertise from "../Components/Services/Expertise";
 import TechStack from "../Components/Services/TechStack";
-import Testimonials from "../Components/Services/Testimonials";
 
 export default function HomePage() {
   return(
@@ -24,15 +23,10 @@ export default function HomePage() {
           <TechStack/>
         </div>
       </div>
-      <div className="min-h-screen flex items-center justify-center bg-[#314028]">
-        <div className="py-6 px-60">
-          <Testimonials/>
-        </div>
-      </div>
       <div className="bg-[#153828] pt-6 pb-20 px-110">
         <Form/>
       </div>
-      <div className="py-6 px-20 m">
+      <div className="py-6 px-20 ">
         <Footer/>
       </div>
     </div>
