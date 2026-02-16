@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Info() {
   return(
-    <div className='flex items-center '>
+    <div className='flex items-center justify-between max-sm:flex-col-reverse max-sm:text-center'>
       <div className='w-200'>
         <div className='inline-block'>
           <div className='flex items-center justify-center pr-6 bg-[#c89757] rounded-4xl'>
