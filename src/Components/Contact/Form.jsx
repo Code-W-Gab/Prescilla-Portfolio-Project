@@ -67,7 +67,7 @@ export default function Form() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Full Name"
-              className="border py-1.5 px-4 rounded-sm"
+              className="border py-3 px-4 rounded-sm"
               required
             />
           </div>
@@ -80,7 +80,7 @@ export default function Form() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Example@gmail.com"
-              className="border py-2 px-4 rounded-sm"
+              className="border py-3 px-4 rounded-sm"
               required
             />
           </div>
@@ -91,7 +91,7 @@ export default function Form() {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className="border py-2 px-2 rounded-sm"
+              className="border py-3 px-2 rounded-sm"
               required
             >
               <option value="">Please Select</option>
@@ -125,10 +125,10 @@ export default function Form() {
           </div>
 
           {submitStatus === 'success' && (
-            <p className="mt-4 text-green-600">Message sent successfully! I'll get back to you soon.</p>
+            <p className="mt-4 text-green-600 text-center">Message sent successfully! I'll get back to you soon.</p>
           )}
           {submitStatus === 'error' && (
-            <p className="mt-4 text-red-600">Failed to send message. Please try again.</p>
+            <p className="mt-4 text-red-600 text-center">Failed to send message. Please try again.</p>
           )}
         </form>
       </div>

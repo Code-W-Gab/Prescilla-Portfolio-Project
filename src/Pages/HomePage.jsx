@@ -9,7 +9,7 @@ import TechStack from "../Components/Services/TechStack";
 export default function HomePage() {
   return(
     <div>
-      <div className=" bg-gradient-custom px-40 max-lg:px-10 pt-6 pb-40 max-lg:pb-20 max-xl:px-20">
+      <div className="bg-gradient-custom px-40 max-lg:px-10 pt-6 pb-40 max-lg:pb-20 max-xl:px-20">
         <Header/>
         <Info/>
       </div>

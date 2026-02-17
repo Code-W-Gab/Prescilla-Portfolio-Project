@@ -5,7 +5,7 @@ import Footer from "../Components/common/Footer"
 export default function AboutPage() {
   return(
     <div>
-      <div className="bg-gradient-custom pt-6 pb-20 px-6">
+      <div className="bg-gradient-custom px-40 max-lg:px-10 pt-6 pb-40 max-lg:pb-20 max-xl:px-20">
         <Header/>
         <div className="flex items-center justify-center">
           <AboutMe/>
