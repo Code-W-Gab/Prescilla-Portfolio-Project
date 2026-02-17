@@ -3,7 +3,6 @@ import HomePage from "./Pages/HomePage"
 import AboutPage from "./Pages/AboutPage"
 import ServicePage from "./Pages/ServicePage"
 import ContactPage from "./Pages/ContactPage"
-import FormatPage from "./Pages/FormatPage"
 
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
           <Route path="/About" element={<AboutPage/>}/>
           <Route path="/Service" element={<ServicePage/>}/>
           <Route path="/Contact" element={<ContactPage/>}/>
-          <Route path="/Format" element={<FormatPage/>}/>
         </Route>
       </Routes>
     </main>
