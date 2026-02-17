@@ -5,13 +5,13 @@ import Footer from "../Components/common/Footer"
 export default function AboutPage() {
   return(
     <div>
-      <div className="min-h-screen bg-gradient-custom ">
+      <div className="bg-gradient-custom pt-6 pb-20 px-6">
         <Header/>
         <div className="flex items-center justify-center">
           <AboutMe/>
         </div>
       </div>
-      <div className="py-6 px-20 m">
+      <div className="py-6 px-10 lg:px-20 xl:flex xl:justify-center bg-white">
         <Footer/>
       </div>
     </div>

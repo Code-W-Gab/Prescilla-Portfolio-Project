@@ -49,16 +49,16 @@ export default function Form() {
   };
 
   return(
-    <div className="mt-15">
-      <h1 className="text-5xl serif text-white text-center mb-15">Contact</h1>
+    <div className='w-150 max-md:w-90'>
+      <h1 className="text-6xl max-md:text-5xl serif text-white text-center mb-15">Contact</h1>
       <div className="bg-white p-8 rounded-lg">
         <div className='flex flex-col items-center text-center'>
-          <h3 className='text-3xl sans text-[#9b4819] text-center'>Get In Touch</h3>
-          <p className='sans mt-2 w-100'>Ready to Reclaim Your Time? Let's discuss how I can help streamline your workflow and boost your productivity.</p>
+          <h3 className='text-3xl max-md:text-2xl sans text-[#9b4819] text-center'>Get In Touch</h3>
+          <p className='sans mt-2 max-md:text-sm'>Ready to Reclaim Your Time? Let's discuss how I can help streamline your workflow and boost your productivity.</p>
         </div>
         <div className="text-gray-300 w-full border-b-2 mt-10"></div>
         
-        <form onSubmit={handleSubmit} className="mt-10 text-sm sans">
+        <form onSubmit={handleSubmit} className="mt-10 text-sm max-md:text-xs sans">
           <div className="flex flex-col gap-3">
             <label className="text-gray-600">YOUR NAME:</label>
             <input 
@@ -114,13 +114,15 @@ export default function Form() {
             />
           </div>
 
-          <button 
-            type="submit" 
-            disabled={isSubmitting}
-            className="mt-7 bg-[#9b4819] text-white py-3 px-8 rounded-sm hover:bg-[#7a3614] disabled:bg-gray-400"
-          >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
-          </button>
+          <div className='flex justify-end'>
+            <button 
+              type="submit" 
+              disabled={isSubmitting}
+              className="mt-7 bg-[#9b4819] text-white py-3 px-8 max-md:px-4 max-md:py-2 rounded-sm hover:bg-[#7a3614] disabled:bg-gray-400"
+            >
+              {isSubmitting ? 'Sending...' : 'Send Message'}
+            </button>
+          </div>
 
           {submitStatus === 'success' && (
             <p className="mt-4 text-green-600">Message sent successfully! I'll get back to you soon.</p>

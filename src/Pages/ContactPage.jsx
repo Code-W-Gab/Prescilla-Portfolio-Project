@@ -13,7 +13,7 @@ export default function ContactPage() {
           <Form/>
         </div>
       </div>
-      <div className="py-6 px-20 m">
+      <div className="py-6 px-10 lg:px-20 xl:flex xl:justify-center bg-white">
         <Footer/>
       </div>
     </div>

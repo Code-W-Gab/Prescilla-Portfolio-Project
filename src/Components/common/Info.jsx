@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Info() {
   return(
-    <div className='flex items-center justify-between max-sm:flex-col-reverse max-sm:text-center'>
-      <div className='w-200'>
+    <div className='flex items-center justify-between max-lg:flex-col-reverse max-lg:gap-6 max-lg:text-center'>
+      <div className='max-lg:flex max-lg:flex-col max-lg:items-center'>
         <div className='inline-block'>
           <div className='flex items-center justify-center pr-6 bg-[#c89757] rounded-4xl'>
             <Dot className='text-[#9b4819] size-8' />
@@ -15,18 +15,18 @@ export default function Info() {
         <h1 className='playfair font-bold text-6xl mt-3 mb-2 text-[#153828]'>Prescilla Samorin</h1>
         <p className='serif text-[#314028] text-2xl mb-5'>Virtual Assistant</p>
         <p className='serif text-md text-[#314028] w-80'>Helping entrepreneurs reclaim their time so they can focus on what truly matters.</p>
-        <div className='mt-10 flex items-center gap-6'>
-          <Link to={"/Service"} className='bg-[#c89757] text-white px-8 py-2 border rounded-4xl text-md serif hover:bg-[#314028]'>
+        <div className='mt-10 flex items-center max-lg:justify-center gap-6'>
+          <Link to={"/Service"} className='bg-[#c89757] text-white px-8 py-2 border rounded-4xl text-md max-md:text-xs max-md:py-3 serif hover:bg-[#314028]'>
             View Services
           </Link>
-          <Link to={"/Contact"} className='text-[#c89757] cursor border px-8 py-2 rounded-4xl text-md serif hover:text-[#314028] '>
+          <Link to={"/Contact"} className='text-[#c89757] cursor border px-8 py-2 rounded-4xl text-md max-md:text-xs max-md:py-3 serif hover:text-[#314028] '>
             Get in Touch
           </Link>
         </div>
       </div>
 
-      <div>
-        <img src={girl} alt="Logo" className="size-110" />
+      <div className='max-md:mb-10'>
+        <img src={girl} alt="Logo" className="w-120 h-120 max-md:h-80 max-md:w-200" />
       </div>
     </div>
   )

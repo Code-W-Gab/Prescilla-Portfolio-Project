@@ -15,13 +15,13 @@ export default function Expertise() {
     {title: "Recruitment Support", text: "Job posting management, candidate screening, interview scheduling, and onboarding coordination.", icon: hiring}
   ]
   return(
-    <div>
-      <h1 className="text-5xl serif text-[#9b4819] text-center">Expertise</h1>
+    <div className='max-md:text-center'>
+      <h1 className="text-6xl max-md:text-5xl serif text-[#9b4819] text-center">Expertise</h1>
       <div className='mt-10'>
         <h3 className='text-3xl sans text-[#9b4819] text-center'>What I Do</h3>
         <p className='sans text-center mt-2'>Comprehensive virtual assistance tailored to your unique business needs</p>
       </div>
-      <div className='mt-15 grid grid-cols-3 gap-10'>
+      <div className='mt-15 grid grid-cols-3 max-md:grid-cols-1 max-xl:grid-cols-2 gap-10'>
         {Expertises.map((expertise) => {
           const image = expertise.icon
           return(
